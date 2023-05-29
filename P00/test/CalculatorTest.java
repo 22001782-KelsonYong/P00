@@ -101,6 +101,17 @@ public class CalculatorTest {
 		int expected = 2;
 		assertEquals(expected, actual);
 	}
+	
+	public void testDivideNegative() {
+		int a = 4;
+		int b = -2;
+		Calculator cal = new Calculator();
+
+		int actual = cal.divide(a, b);
+
+		int expected = -2;
+		assertEquals(expected, actual);
+	}
 
 	public void testDivideZeroError() {
 		int a = 4;
@@ -117,15 +128,6 @@ public class CalculatorTest {
 		}
 	}
 
-	public void testDivideNegative() {
-		int a = 4;
-		int b = -2;
-		Calculator cal = new Calculator();
 
-		int actual = cal.divide(a, b);
-
-		int expected = -2;
-		assertEquals(expected, actual);
-	}
 
 }
