@@ -82,12 +82,12 @@ public class CalculatorTest {
 
 	public void testMultiplyNegative() {
 		int a = 10;
-		int b = -20;
+		int b = -30;
 		Calculator cal = new Calculator();
 
 		int actual = cal.multiply(a, b);
 
-		int expected = -200;
+		int expected = -300;
 		assertEquals(expected, actual);
 	}
 
