@@ -15,7 +15,7 @@ public class Calculator {
 
 	public int divide(int a, int b) {
 		if (b == 0) {
-			throw new IllegalArgumentException("0 is undivisible.");
+			throw new IllegalArgumentException("0 is undivisible. ");
 		}
 		return a / b;
 	}
